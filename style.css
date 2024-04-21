@@ -30,6 +30,12 @@ h1{
     
 }
 
+h4{
+    font-size: 3em;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.24);
+}
+
 #game{
     height: 300px;
     width: 900px;
@@ -100,7 +106,7 @@ h1{
 @media (max-width:750px){
 
     h1{
-        font-size: 3em;
+        font-size: 2em;
     }
 
     #restart{
@@ -108,11 +114,17 @@ h1{
         width: 90px;
         height: 40px;
         font-size: 1em;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.603);
     }
 
+    h4{
+        font-size: 1.2em;
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.24);
+    }
     #game{
         height: 150px;
-        width: 500px;
+        width: 400px;
         overflow: hidden;
     }
 
@@ -142,7 +154,7 @@ h1{
     }
 
     @keyframes block{
-        0%{left: 490px;}
+        0%{left: 390px;}
         100%{left: -10px;}
     }
 }
