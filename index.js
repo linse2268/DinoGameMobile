@@ -3,6 +3,7 @@ var block = document.getElementById('block');
 var text = document.getElementById('text');
 var viewportWidth =  parseInt(window.innerWidth);
 var running = true;
+var score = document.getElementById('score');
 
 
 
@@ -68,10 +69,12 @@ function restart(){
 
 
 
+var time = 0;
+setInterval(function(){
+    if(running){
+        time++;
+        score.innerText = "score " + time
+    }
 
-function animationTime(){
-    var time = Math.random(1, 2).toFixed(1);
+}, 1500)
     
-    block.style.animation = "block" + time +"linear";
-
-}
